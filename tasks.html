@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/tasks.css">
+    <title>List of Tasks</title>
+</head>
+<body>
+    <nav>
+        <h2>Task Manager</h2>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./add.html">Add Task</a></li>
+            <li><a href="./tasks.html">List of Tasks</a></li>
+            <li><a href="./representations.html">Visual Representations</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Task List</h1>
+        <div class="task-manager">
+            <ul id="task-list">
+                <li class="low">
+                    <span>Complete project proposal</span>
+                    <span class="deadline">Due: 2024-10-25</span>
+                    <div>
+                        <button>Complete</button>
+                        <button>Delete</button>
+                    </div>
+                </li>
+                <li class="medium">
+                    <span>Prepare presentation</span>
+                    <span class="deadline">Due: 2024-10-27</span>
+                    <div>
+                        <button>Complete</button>
+                        <button>Delete</button>
+                    </div>
+                </li>
+                <li class="high">
+                    <span>Client meeting</span>
+                    <span class="deadline">Due: 2024-10-24</span>
+                    <div>
+                        <button>Complete</button>
+                        <button>Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

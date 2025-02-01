@@ -1,0 +1,245 @@
+/* Body styling */
+   
+    body{
+        background-image: url('../images/bc7a1001-bc7f-4724-badb-5f255180e758.jpg');
+         background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Ensure the image stays fixed on scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styling (fixed) */
+nav {
+    background-color: #ffffff; /* White background */
+    color: #7a7777; /* Dark gray for text */
+    padding: 10px 25px;
+    border-radius: 12px; /* Softer border radius */
+    box-shadow: 0 4px 10px rgba(41, 41, 41, 0.1); /* Prominent shadow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keep nav bar on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling the ul element in nav for horizontal layout */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+/* Align each li element in a row */
+nav ul li {
+    margin-right: 20px; /* Spacing between the links */
+}
+
+/* Link styling */
+nav a {
+    color: #1c1b1b; /* Dark gray for links */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Container styling */
+.container {
+    max-width: 1500px; /* Maximum width of the main container */
+    width: 1000px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%; /* Position at the vertical middle */
+    left: 50%; /* Position at the horizontal middle */
+    transform: translate(-50%, -50%); /* Offset the element to center */
+    text-align: center;
+}
+
+/* Task Manager Styling */
+/* Subtle shadow for depth */
+.task-manager {
+    max-width: 800px; /* Set width to 800px for a wider container */
+    width: 90%; /* Allow it to be responsive */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    padding: 20px; /* Padding inside the task manager */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #eff1f3; /* Light background color for distinction */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+/* Heading styling */
+h1 {
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Form and filter layout styling */
+.form-group, .filter-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Input and select fields styling */
+input, select {
+    padding: 10px;
+    margin-right: 10px;
+    margin-inline-start: 10px;
+    border: 4px solid #9b9b9ba9;
+    border-radius: 3px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: rgb(224, 224, 230);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Task list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+/* Individual task item styling */
+li {
+    display: flex;
+    justify-content: space-between; /* Aligns the text and button div on opposite sides */
+    align-items: center;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+/* Completed task style */
+li.completed {
+    text-decoration: line-through;
+    color: rgb(95, 95, 96);
+}
+
+/* Priority color coding */
+.low {
+    background: #d4edda; /* Light green for low priority */
+}
+
+.medium {
+    background: #ffeeba; /* Light yellow for medium priority */
+}
+
+.high {
+    background: #f8d7da; /* Light red for high priority */
+}
+
+/* Align the buttons in a div to the right */
+li div {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Task action buttons (complete, delete) */
+li button {
+    padding: 8px 12px;
+    background: red; /* Red background for buttons */
+    color: white; /* White text */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Button hover effects */
+li button:hover {
+    background: darkred; /* Darker red on hover */
+}
+
+/* Deadline styling */
+.deadline {
+    font-size: 0.8em;
+    color: gray;
+    margin-left: 10px;
+}
+
+/* Chart container */
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Task list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    transition: all 0.3s ease; /* Smooth transitions for list */
+}
+
+/* Individual task item styling with hover effect */
+li {
+    display: flex;
+    justify-content: space-between; /* Aligns the text and button div on opposite sides */
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+li button {
+    padding: 8px 15px;
+    background:rgb(218, 37, 37); /* Red background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effects */
+li button:hover {
+    background: rgb(131, 129, 129); /* Darker red on hover */
+}
+li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Completed task style */
+
+/* Priority color coding with subtle gradient */
+.low {
+    background: linear-gradient(to right, #d4edda, #e2f1e0); /* Gradient for low priority */
+}
+
+.medium {
+    background: linear-gradient(to right, #ffeeba, #fff3cd); /* Gradient for medium priority */
+}
+
+.high {
+    background: linear-gradient(to right, #f8d7da, #f9e2e4); /* Gradient for high priority */
+}
+
+/* Improved button styling with transitions */

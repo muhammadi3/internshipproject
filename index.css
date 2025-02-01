@@ -1,0 +1,144 @@
+/* Body styling for the background image */
+body {
+    background-image: url('../images/bc7a1001-bc7f-4724-badb-5f255180e758.jpg');
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Ensure the image stays fixed on scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+/* Navigation bar styling (fixed) */
+nav {
+    background-color: #ffffff; /* White background */
+    color: #4a4a4a; /* Dark gray for text */
+    padding: 10px 25px;
+    border-radius: 12px; /* Softer border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Prominent shadow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keep nav bar on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling the ul element in nav for horizontal layout */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+/* Align each li element in a row */
+nav ul li {
+    margin-right: 20px; /* Spacing between the links */
+}
+
+/* Link styling */
+nav a {
+    color: #4a4a4a; /* Dark gray for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Main container styling and centering */
+.container {
+    max-width: 650px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 55%; /* Position at the vertical middle */
+    left: 50%; /* Position at the horizontal middle */
+    transform: translate(-50%, -50%); /* Offset the element to center */
+    text-align: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-between; /* Aligns the text and button div on opposite sides */
+    align-items: center;
+    padding: 10px 18px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+li button {
+    padding: 8px 15px;
+    background:rgb(218, 37, 37); /* Red background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effects */
+li button:hover {
+    background: rgb(131, 129, 129); /* Darker red on hover */
+}
+li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.features ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    color: #403f3f;
+}
+/* Heading styling */
+h1 {
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* New features section */
+.features h2 {
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+}
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    color: #6b6b69;
+}
+
+
+.features li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 14px 25px;
+    background-color: #5a6268;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #434a54;
+    transform: translateY(-2px);
+}

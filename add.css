@@ -1,0 +1,201 @@
+/* Body styling for the background image */
+body {
+    background-image: url('../images/bc7a1001-bc7f-4724-badb-5f255180e758.jpg');
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Ensure the image stays fixed on scroll */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    font-family: Arial, sans-serif; /* Font family for the body */
+}
+
+/* Navigation bar styling (fixed) */
+nav {
+    background-color: #ffffff; /* White background */
+    color: #4a4a4a; /* Dark gray for text */
+    padding: 10px 25px;
+    border-radius: 12px; /* Softer border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Prominent shadow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keep nav bar on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling the ul element in nav for horizontal layout */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+/* Align each li element in a row */
+nav ul li {
+    margin-right: 20px; /* Spacing between the links */
+}
+
+/* Link styling */
+nav a {
+    color: #4a4a4a; /* Dark gray for links */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px; /* Increased width to 1200px */
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%; /* Position at the vertical middle */
+    left: 50%; /* Position at the horizontal middle */
+    transform: translate(-50%, -50%); /* Offset the element to center */
+    text-align: center;
+}
+
+
+/* Heading styling */
+h1 {
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Form and filter layout styling */
+.form-group {
+    display: flex;
+    justify-content: center; /* Center form elements */
+    margin-bottom: 40px;
+    gap: 15px; /* Add space between inputs */
+}
+
+/* Input and select fields styling */
+input, select {
+    padding: 10px;
+    border: 2px solid #a09da2a9; /* Slightly reduced border thickness */
+    border-radius: 3px;
+    width: 250px; /* Set a width for consistent input sizes */
+    font-size: 1em;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #1f70d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #6a6c6d;
+}
+
+/* Task list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+/* Individual task item styling */
+li {
+    display: flex;
+    justify-content: space-between; /* Aligns the text and button div on opposite sides */
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Priority color coding */
+.low {
+    background-color: #d4edda; /* Light green for low priority */
+}
+
+.medium {
+    background-color: #ffeeba; /* Light yellow for medium priority */
+}
+
+.high {
+    background-color: #f8d7da; /* Light red for high priority */
+}
+
+/* Completed task style */
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Task action buttons */
+li button {
+    padding: 8px 15px;
+    background:rgb(218, 37, 37); /* Red background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effects */
+li button:hover {
+    background: rgb(131, 129, 129); /* Darker red on hover */
+}
+
+/* Deadline styling */
+.deadline {
+    font-size: 0.9em;
+    color: gray;
+    margin-left: 10px;
+}
+
+/* Hover effects for task items */
+li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Chart container */
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px; /* Define height for canvas */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack form elements on smaller screens */
+        gap: 10px;
+    }
+}
